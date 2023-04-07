@@ -17,9 +17,9 @@ public class Main {
             int userTypeRequest = Integer.valueOf(scanner.nextLine());
             Plane[] possiblePlanes = inventory.searchPlane(userMileRequest, userTypeRequest);
             if (possiblePlanes.length == 0) {
-                System.out.println("No matches found you dumbfuck change your parameters");
+                System.out.println("No matches found with Given Parameters");
             } else {
-                System.out.println("Here is our perfect system AI generated machine learning found plane just for your needs: " + PlaneInventory.getRandomPlane(possiblePlanes));
+                System.out.println("Here is our chosen aircraft based on given parameters: " + PlaneInventory.getRandomPlane(possiblePlanes));
             }
         }
     }
